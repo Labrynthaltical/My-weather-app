@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherlo</title>
+    <link rel="icon" href="../Images/Icon.jfif">
+    <link rel="stylesheet" href="../CSS/cosmatic.css">
+</head>
+<body>
+    <div id="searchsec">
+    <input type="text" autocomplete="off" placeholder="Enter city name here" id="cityname">
+     <br><br><button id="searchme" onclick="Getmyweather()">Search</button>
+</div>
+<div id="hidern">
+    <div id="searchedcity">
+        <div id="todaysearch">
+        <h2 id="namedcity"></h2> 
+        <div id="instsear">
+  <h3 id="currenttemp"></h3> <img src="" alt="image of current sky condition" id="imagaro"></div>
+        <h4 id="minitemp"></h4> <h4 id="maxtemp"></h4>
+        </div>
+        <h5 id="today"></h5>
+        <div id="nextdays">
+        <div id="nextdaysearched"><h5 id="nextday"></h5>
+            <img src="" id="nextdaycon" alt="weather condition"></div>
+        <div id="nextnextdaysearched"><h5 id="nextnextday"></h5>
+        <img src="" id="nextnextdaycon" alt="weather condition"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+    <!-- <p>All that remain is the animation</p> -->
+    <script src="../JS/excution.js"></script>
+</body>
+</html>
