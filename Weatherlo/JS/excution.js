@@ -2,7 +2,7 @@ async function Getmyweather() {
   try{
   let searcity = document.getElementById("cityname").value.toLowerCase();
   console.log(searcity)
-  const linkin = await fetch (`https://api.weatherapi.com/v1/forecast.json?key=3a7d0cb81bd3425fb81201656250504&q=${searcity}&days=7&aqi=no&alerts=no`)
+  const linkin = await fetch (`https://api.weatherapi.com/v1/forecast.json?key=${api_key}=${searcity}&days=7&aqi=no&alerts=no`)
   if(!linkin.ok){
     throw new Error("Please search correctly");
   }
